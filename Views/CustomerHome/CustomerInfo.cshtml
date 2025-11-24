@@ -1,0 +1,13 @@
+﻿@{
+ViewData["Title"] = "Hồ sơ khách hàng";
+}
+@if(ViewBag.khachhang != null)
+{
+	<h3>Chào @ViewBag.khachhang.Ten!</h3>
+	<p>SV bổ sung nội dung tùy ý</p>
+	<p><a asp-action="Signout">Đăng xuất</a></p>
+}
+else
+{
+	<p>Vui lòng <a asp-action="Login">Đăng nhập</a></p>
+}
